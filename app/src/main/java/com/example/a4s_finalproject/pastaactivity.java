@@ -36,3 +36,20 @@ public class pastaactivity extends AppCompatActivity {
                 String price1 = "0";
                 String price2 = "0";
                 String price3 = "0";
+
+                if(position == 0){
+                    price = "25";
+                    intent.putExtra("price",price);
+                }
+                else if(position == 1){
+                    price1 = "26";
+                    intent.putExtra("price" ,price1);
+                }
+                else if(position == 2){
+                    price2 = "30";
+                    intent.putExtra("price" ,price2);
+                }
+                else if(position == 3){
+                    price3 = "15";
+                    intent.putExtra("price" ,price3);
+                }
