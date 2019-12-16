@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class sizeactivity extends AppCompatActivity {
 
@@ -57,7 +58,7 @@ public class sizeactivity extends AppCompatActivity {
 
                 priceofpizza = Integer.valueOf(editText_price.getText().toString());
 
-                switch(spinner_size.getSelectedItem().toString()){
+                switch (spinner_size.getSelectedItem().toString()) {
                     case "Small":
                         totalvalue = priceofpizza + 0;
                         editText_price.setText(String.valueOf(totalvalue));
@@ -77,6 +78,35 @@ public class sizeactivity extends AppCompatActivity {
                         totalvalue = priceofpizza + 15;
                         editText_price.setText(String.valueOf(totalvalue));
                         break;
+                }
+            }
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
 
+            }
+        });
+    }
+
+    public void Bookitem(View view){
+
+        String name = editText_name.getText().toString().trim();
+        String mobile = editText_mobile.getText().toString().trim();
+        String item = editText_price.getText().toString().trim();
+        String size  = spinner_size.getSelectedItem().toString();
+        String address = editText_address.getText().toString().trim();
+
+        if (name.isEmpty() && mobile.isEmpty()   && address.isEmpty()) {
+            Toast.makeText(getApplicationContext(), "Enter empty fields", Toast.LENGTH_LONG).show();
+            return;
+        }
+
+        else {
+            Toast.makeText(sizeactivity.this, "successfully insert a row",Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(getApplicationContext(), paymentactivity.class);
+            startActivity(intent);
+        }
     }
 }
+
+
+
