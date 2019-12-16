@@ -6,25 +6,27 @@
     android:layout_height="match_parent"
     android:layout_marginLeft="30dp"
     android:layout_marginRight="30dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:padding="20dp"
     tools:context=".tipsandsuggestions">
 
     <ImageView
+        android:layout_above="@+id/textView6"
         android:id="@+id/imageView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_marginTop="30dp"
-        android:layout_marginBottom="37dp"
+        android:layout_marginBottom="30dp"
         android:src="@drawable/suggestion_box" />
 
     <TextView
+        android:layout_above="@+id/textView13"
         android:id="@+id/textView6"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_above="@+id/textView13"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
         android:text="Tips and Suggestion"
         android:textAlignment="center"
         android:textSize="24dp" />
@@ -34,8 +36,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/editText10"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
         android:text="Name" />
 
     <EditText
@@ -43,8 +43,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/textView14"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
         android:background="@drawable/edittext_layout"
         android:ems="10"
         android:hint="Please Enter Your Name"
@@ -55,16 +53,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/editText11"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
         android:text="Email" />
 
     <EditText
         android:id="@+id/editText11"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
         android:layout_centerVertical="true"
         android:background="@drawable/edittext_layout"
         android:ems="10"
@@ -76,8 +70,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/editText11"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
         android:text="Suggestion" />
 
     <EditText
@@ -85,8 +77,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView15"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
         android:background="@drawable/edittext_layout"
         android:ems="10"
         android:hint="Please Enter Your Suggestion"
