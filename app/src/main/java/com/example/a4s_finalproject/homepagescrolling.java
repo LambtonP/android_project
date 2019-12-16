@@ -123,6 +123,13 @@ public class homepagescrolling extends AppCompatActivity {
             case R.id.Aboutus:
                 Intent intent1 = new Intent(getApplicationContext(), aboutus.class);
                 startActivity(intent1);
+                break;case R.id.tips:
+                Intent intent2 = new Intent(getApplicationContext(), tipsandsuggestions.class);
+                startActivity(intent2);
                 break;
-
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+        return true;
+    }
 }
