@@ -68,7 +68,17 @@ public class homepagescrolling extends AppCompatActivity {
             }
         });
 
-
+        lyt_wings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Bookingactivity.class);
+                String text = "Wings";
+                String price = "35";
+                intent.putExtra("price",price);
+                intent.putExtra("PIZZANAME",text);
+                startActivity(intent);
+            }
+        });
 
     }
 }
