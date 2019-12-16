@@ -60,6 +60,14 @@ public class homepagescrolling extends AppCompatActivity {
             }
         });
 
+        lyt_pasta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), pastaactivity.class);
+                startActivity(intent);
+            }
+        });
+
 
 
     }
