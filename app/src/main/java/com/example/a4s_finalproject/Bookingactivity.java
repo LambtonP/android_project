@@ -2,6 +2,7 @@ package com.example.a4s_finalproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -22,5 +23,11 @@ public class Bookingactivity extends AppCompatActivity {
         editText_itemname = (EditText) findViewById(R.id.bitem);
         editText_address = (EditText) findViewById(R.id.baddress);
 
+        Intent intent = getIntent();
+        final String  text = intent.getExtras().getString("price");
+        String  text1 = intent.getExtras().getString("PIZZANAME");
+
+        txt_bookiid.setText(text1);
+        editText_itemname.setText(text);
     }
 }
