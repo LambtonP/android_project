@@ -120,5 +120,9 @@ public class homepagescrolling extends AppCompatActivity {
                 this.startActivity(intent);
                 finish();
                 break;
+            case R.id.Aboutus:
+                Intent intent1 = new Intent(getApplicationContext(), aboutus.class);
+                startActivity(intent1);
+                break;
 
 }
