@@ -15,5 +15,9 @@ public class pastaactivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pastaactivity);
+
+        gridView = findViewById(R.id.gridView2);
+        final iconadapter2 iconAdapter = new iconadapter2(this, imageIcons, numbers);
+        gridView.setAdapter(iconAdapter);
     }
 }
