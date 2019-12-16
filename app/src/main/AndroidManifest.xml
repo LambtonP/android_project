@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".WingsList"></activity>
+        <activity android:name=".sizeactivity"></activity>
+        <activity android:name=".WingsList" />
         <activity android:name=".pastaactivity" />
         <activity android:name=".calzoneactivity" />
         <activity android:name=".pizzalist" />
