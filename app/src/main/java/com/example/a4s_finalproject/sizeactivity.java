@@ -2,6 +2,7 @@ package com.example.a4s_finalproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.ArrayAdapter;
@@ -35,6 +36,13 @@ public class sizeactivity extends AppCompatActivity {
         btn_Ok=(Button)findViewById(R.id.ukbook);
         Log.i(TAG, "spinner");
 
+        Intent intent = getIntent();
+
+        final String  text = intent.getExtras().getString("price");
+        String  text1 = intent.getExtras().getString("PIZZANAME");
+
+        txt_pizzas.setText(text1);
+        editText_price.setText(text);
 
     }
 }
