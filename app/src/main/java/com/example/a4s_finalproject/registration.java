@@ -3,8 +3,12 @@ package com.example.a4s_finalproject;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
 
 public class registration extends AppCompatActivity {
+    EditText firstname, lastname , email , password, repassword;
+    Button regitration;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
