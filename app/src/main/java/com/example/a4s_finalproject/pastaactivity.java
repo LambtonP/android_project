@@ -2,8 +2,12 @@ package com.example.a4s_finalproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.Toast;
 
 public class pastaactivity extends AppCompatActivity {
     GridView gridView;
@@ -16,8 +20,19 @@ public class pastaactivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pastaactivity);
 
-        gridView = findViewById(R.id.gridView2);
-        final iconadapter2 iconAdapter = new iconadapter2(this, imageIcons, numbers);
+        gridView = findViewById(R.id.gridView3);
+
+        final iconadapter3 iconAdapter = new iconadapter3(this, imageIcons, numbers);
         gridView.setAdapter(iconAdapter);
-    }
-}
+
+        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(pastaactivity.this, "You clicked on " + iconAdapter.getItem(position), Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getApplicationContext(), Bookingactivity.class);
+//                Bundle extras = new Bundle();
+                String str = iconAdapter.getItem(position);
+                String price = "0";
+                String price1 = "0";
+                String price2 = "0";
+                String price3 = "0";
