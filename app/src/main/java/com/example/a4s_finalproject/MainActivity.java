@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
 
             public void onClick(View v) {
 
-                String   user , passwordtext1;
+                String user, passwordtext1;
                 user = email.getText().toString();
                 passwordtext1 = password.getText().toString();
                 //invisibletxt = invisible.getText().toString();
