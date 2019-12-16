@@ -53,3 +53,10 @@ public class pastaactivity extends AppCompatActivity {
                     price3 = "15";
                     intent.putExtra("price" ,price3);
                 }
+                intent.putExtra("prize",price);
+                intent.putExtra("PIZZANAME",str);
+                startActivity(intent);
+            }
+        });
+    }
+}
