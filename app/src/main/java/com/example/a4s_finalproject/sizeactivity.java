@@ -57,5 +57,26 @@ public class sizeactivity extends AppCompatActivity {
 
                 priceofpizza = Integer.valueOf(editText_price.getText().toString());
 
+                switch(spinner_size.getSelectedItem().toString()){
+                    case "Small":
+                        totalvalue = priceofpizza + 0;
+                        editText_price.setText(String.valueOf(totalvalue));
+                        break;
+
+                    case "Medium":
+                        totalvalue = priceofpizza + 5;
+                        editText_price.setText(String.valueOf(totalvalue));
+                        break;
+
+                    case "Large":
+                        totalvalue = priceofpizza + 10;
+                        editText_price.setText(String.valueOf(totalvalue));
+                        break;
+
+                    case "Extra Large":
+                        totalvalue = priceofpizza + 15;
+                        editText_price.setText(String.valueOf(totalvalue));
+                        break;
+
     }
 }
