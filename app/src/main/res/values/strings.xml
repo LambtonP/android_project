@@ -3,10 +3,10 @@
     <string name="title_activity_homepagescrolling">homepagescrolling</string>
     <string name="action_settings">Settings</string>
     <string name="about_us">" This Food Ordering system is used to book the food items from the home.
-        Online food ordering is the process of ordering food through the restaurant's own website or mobile app.
+
         The process consists of a customer choosing the restaurant, scanning the menu items, choosing an item, and finally choosing for pick-up or delivery.
-	    Payment is then administered by paying with a credit card or debit card through the app or website or in cash at the restaurant when going to pickup.
-	    The website and app inform the customer of the food quality, duration of food preparation, and when the food is ready for pick-up or the amount of time it will take for delivery."
+
+        The website and app inform the customer of the food quality, duration of food preparation, and when the food is ready for pick-up or the amount of time it will take for delivery."
     </string>
 
     <string-array name="Select_size">
