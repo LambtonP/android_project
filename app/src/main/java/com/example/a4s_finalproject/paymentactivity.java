@@ -3,6 +3,7 @@ package com.example.a4s_finalproject;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -35,5 +36,16 @@ public class paymentactivity extends AppCompatActivity {
         edt_expdate.setText(new StringBuilder().append(month).append("/").append(year));
 
     }
+    public void submit(View view) {
+        String  str=edt_cardnumber.getText().toString();
+        String  str1=edt_cardname.getText().toString();
+        String  str2=edt_expdate.getText().toString();
+        String  str3=edt_cvv.getText().toString();
+        if(str.equalsIgnoreCase(""))
+        {
+            edt_cardnumber.setHint("please enter number");//it gives user to hint
+            edt_cardnumber.setError("please enter number");//it gives user to info message //use any one //
+        }
+
     }
 }
