@@ -3,6 +3,7 @@ package com.example.a4s_finalproject;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -42,6 +43,14 @@ public class homepagescrolling extends AppCompatActivity {
         lyt_frechfries =  findViewById(R.id.frechfries);
         txt_frenchfry =  findViewById(R.id.frenchfry);
         lyt_soda =  findViewById(R.id.soda);
+
+        lyt_Pizza.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), pizzalist.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }
