@@ -52,5 +52,15 @@ public class homepagescrolling extends AppCompatActivity {
             }
         });
 
+        lyt_calzones.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), calzoneactivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+
     }
 }
