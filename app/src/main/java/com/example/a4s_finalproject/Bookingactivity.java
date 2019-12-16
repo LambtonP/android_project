@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -30,4 +31,12 @@ public class Bookingactivity extends AppCompatActivity {
         txt_bookiid.setText(text1);
         editText_itemname.setText(text);
     }
-}
+
+    public void Registeritem(View view) {
+
+        String name = editText_name.getText().toString().trim();
+        String mobile = editText_contact.getText().toString().trim();
+        String contact = editText_itemname.getText().toString().trim();
+        String address = editText_address.getText().toString().trim();
+
+    }
