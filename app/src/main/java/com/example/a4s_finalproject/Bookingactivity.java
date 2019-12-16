@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Bookingactivity extends AppCompatActivity {
 
@@ -38,5 +39,18 @@ public class Bookingactivity extends AppCompatActivity {
         String mobile = editText_contact.getText().toString().trim();
         String contact = editText_itemname.getText().toString().trim();
         String address = editText_address.getText().toString().trim();
+        if (name.isEmpty() && mobile.isEmpty()  && address.isEmpty()) {
+            Toast.makeText(getApplicationContext(), "Enter valid name", Toast.LENGTH_LONG).show();
+            return;
+        }
 
+        else {
+            Toast.makeText(Bookingactivity.this,"successfully done",Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(getApplicationContext(), paymentactivity.class);
+
+            startActivity(intent);
+
+
+        }
     }
+}
