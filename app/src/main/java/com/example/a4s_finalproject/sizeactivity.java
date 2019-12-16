@@ -3,6 +3,7 @@ package com.example.a4s_finalproject;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -24,5 +25,16 @@ public class sizeactivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sizeactivity);
+
+        txt_pizzas=(TextView)findViewById(R.id.pizzaname);
+        editText_name=(EditText)findViewById(R.id.bkname);
+        editText_mobile=(EditText)findViewById(R.id.bkcontact);
+        editText_price=(EditText) findViewById(R.id.price);
+        editText_address=(EditText)findViewById(R.id.bkaddress);
+        spinner_size=(Spinner)findViewById(R.id.bksize);
+        btn_Ok=(Button)findViewById(R.id.ukbook);
+        Log.i(TAG, "spinner");
+
+
     }
 }
