@@ -16,5 +16,11 @@ public class Bookingactivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bookingactivity);
 
+        txt_bookiid = (TextView) findViewById(R.id.orderid);
+        editText_name = (EditText) findViewById(R.id.bname);
+        editText_contact = (EditText) findViewById(R.id.bcontact);
+        editText_itemname = (EditText) findViewById(R.id.bitem);
+        editText_address = (EditText) findViewById(R.id.baddress);
+
     }
 }
