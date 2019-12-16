@@ -96,5 +96,14 @@ public class homepagescrolling extends AppCompatActivity {
             }
         });
 
+        lyt_soda.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), sodapopactivity.class);
+                startActivity(intent);
+            }
+        });
+    }
+
     }
 }
