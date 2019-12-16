@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".calzoneactivity"></activity>
+        <activity android:name=".pastaactivity"></activity>
+        <activity android:name=".calzoneactivity" />
         <activity android:name=".pizzalist" />
         <activity android:name=".homepagescrolling" />
         <activity android:name=".homepage" />
