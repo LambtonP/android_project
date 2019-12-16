@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -37,12 +39,23 @@ public class sizeactivity extends AppCompatActivity {
         Log.i(TAG, "spinner");
 
         Intent intent = getIntent();
-
         final String  text = intent.getExtras().getString("price");
         String  text1 = intent.getExtras().getString("PIZZANAME");
 
         txt_pizzas.setText(text1);
         editText_price.setText(text);
+
+        adapter_size = ArrayAdapter.createFromResource(this, R.array.Select_size, android.R.layout.simple_spinner_item);
+        // Specify the layout to use when the list of choices appears
+        adapter_size.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        // Apply the adapter to the spinner
+        spinner_size.setAdapter(adapter_size);
+
+        spinner_size.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
+                priceofpizza = Integer.valueOf(editText_price.getText().toString());
 
     }
 }
