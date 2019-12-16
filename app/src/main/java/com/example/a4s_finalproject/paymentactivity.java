@@ -2,10 +2,12 @@ package com.example.a4s_finalproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import java.util.Calendar;
 
@@ -47,5 +49,23 @@ public class paymentactivity extends AppCompatActivity {
             edt_cardnumber.setError("please enter number");//it gives user to info message //use any one //
         }
 
+        if (str1.equalsIgnoreCase("")){
+            edt_cvv.setHint("Please enter name");
+            edt_cvv.setError("please enter name");
+        }
+        if (str2.equalsIgnoreCase("")){
+            edt_expdate.setHint("Please enter exp date");
+            edt_expdate.setError("please enter exp date");
+        }
+        if (str3.equalsIgnoreCase("")){
+            edt_cvv.setHint("Please enter cvv");
+            edt_cvv.setError("please enter cvv");
+        }
+        else
+        {
+            Toast.makeText(this, "Payment successfully completed order will reached as soon as possible", Toast.LENGTH_SHORT).show();
+            Intent intent=new Intent(getApplicationContext(),homepagescrolling.class);
+            startActivity(intent);
+        }
     }
 }
