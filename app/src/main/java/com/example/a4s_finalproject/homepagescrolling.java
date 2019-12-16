@@ -32,8 +32,16 @@ public class homepagescrolling extends AppCompatActivity {
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
-
             }
         });
+        lyt_Pizza =  findViewById(R.id.pizza);
+        // searchView = findViewById(R.id.search);
+        lyt_calzones =  findViewById(R.id.calzone);
+        lyt_pasta = findViewById(R.id.pasta);
+        lyt_wings =  findViewById(R.id.chickenwings);
+        lyt_frechfries =  findViewById(R.id.frechfries);
+        txt_frenchfry =  findViewById(R.id.frenchfry);
+        lyt_soda =  findViewById(R.id.soda);
+
     }
 }
