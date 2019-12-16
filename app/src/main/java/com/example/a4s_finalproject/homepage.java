@@ -32,5 +32,44 @@ public class homepage extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        lyt_calzones.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), calzoneactivity.class);
+                startActivity(intent);
+            }
+        });
+        lyt_pasta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), pastaactivity.class);
+                startActivity(intent);
+            }
+        });
+        lyt_wings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), WingsList.class);
+                startActivity(intent);
+            }
+        });
+        lyt_frechfries.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String str = txt_frenchfry.getText().toString();
+                Intent intent = new Intent(getApplicationContext(), sizeactivity.class);
+                Bundle extras = new Bundle();
+                extras.putString("PIZZANAME", str);
+                intent.putExtras(extras);
+                startActivity(intent);
+            }
+        });
+        lyt_soda.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), sodapopactivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
