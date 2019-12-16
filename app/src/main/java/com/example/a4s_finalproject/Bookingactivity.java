@@ -43,13 +43,10 @@ public class Bookingactivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "Enter valid name", Toast.LENGTH_LONG).show();
             return;
         }
-
         else {
             Toast.makeText(Bookingactivity.this,"successfully done",Toast.LENGTH_LONG).show();
             Intent intent = new Intent(getApplicationContext(), paymentactivity.class);
-
             startActivity(intent);
-
 
         }
     }
